@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
-int is_prime(long num)
-{
+int is_prime(long num) {
     int k = 1, a = 0, b = 0;
     long sr;
-    switch(num)
-        {
+    switch(num) {
         case 1: return 0;
         case 2: return 1;
         case 3: return 1;
@@ -30,11 +28,10 @@ int is_prime(long num)
     return 1;
 }
 
-int main(void)
-{
+int main(void) {
     int j;
 
-    for (j = 0; j<100; j++){
+    for (j = 0; j<100; j++) {
         if (is_prime(j))
             printf("%d is a prime\n", j);
     }
